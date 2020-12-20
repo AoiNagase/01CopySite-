@@ -1,0 +1,137 @@
+section{
+    padding: 60px 20px;
+  }
+
+/* 非表示にする部分(ナビバー) */
+.header-nav{
+    display: none;
+}
+
+ 
+ /* --------------------- */
+ /* ハンバーガーメニュー */
+
+ /* ハンバーガーメニューはレスポンシブ時のみ表示する */
+ .sp-menu{
+  display: block;
+}
+
+/* ハンバーガーメニューのアイコン */
+#nav-open span,#nav-open span:before,#nav-open span:after{
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background-color: #666;
+  content: "";
+  cursor: pointer;
+}
+
+/* 1本目の横線 */
+#nav-open span{
+  top: 38px;
+  right: 30px;
+}
+
+/* 2本目の横線 */
+#nav-open span:before{
+  bottom: -12px;
+}
+
+/* 3本目の横線 */
+#nav-open span:after{
+  bottom: -24px;
+}
+
+/* チェックボックスは非表示に */
+.nav-invisible{
+  display: none;
+}
+
+/* ナビバーは非表示に */
+/* #nav-contents{
+  display: none;
+} */
+#nav-contents{
+  position: absolute;
+  top: 80px;
+  /* 重なり順序を指定するプロパティ(値が大きいほど前面に出る) */
+  transform: translateX(-90%);
+  z-index: 100;
+  width: 30%;
+  /* 高さを自動にしておくとメニューにできる */
+  height: auto;
+  background-color: black;
+  /* ゆっくり動かす */
+  transition: .3s;
+  /* 要素の透明度(0.0<透明>～1.0<不透明>)を指定
+     通常は非表示に */
+  opacity: 0;
+}
+
+/* チェックがついたときは透過度を下げて表示させる */
+/* ※関節セレクタを使う */
+#nav-input:checked ~ #nav-contents{
+  opacity: .8;
+}
+
+.sp-menu-list{
+  border-bottom: 1px solid white;
+  text-align: left;
+  line-height: 2.0;
+  padding: 16px;
+}
+
+.sp-menu-top{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.sp-menu-bottom{
+  font-size: 11px;
+}
+
+
+/* キャッチコピーは中央に */
+.m-top p {
+  /* top: auto;*/
+  left: 45%; 
+  font-size: 1.3em;/*サイズ1.5倍*/
+  /* transform: translate(-50%,-50%);  */
+  margin:0;
+  padding:0;
+  }
+.m-top img {
+  height: 400px;
+  object-fit: cover;
+  }
+
+/* 見出し3 */
+.m-info-date{
+  float: none;
+}
+/* access */
+
+.m-access-logolabel{
+  width: 200px;
+  margin: 0 auto;
+
+}
+.m-access-logo{
+  margin-top: 40px;
+}
+
+.m-p-access{
+  text-align: center;
+}
+
+.m-access ul{
+  width: 80px;
+  margin: 0 auto;
+}
+
+
+.m-about-button{
+  display: block;
+  margin: 30px auto 0 auto;
+}

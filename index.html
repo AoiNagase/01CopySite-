@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja"">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+
+    <!-- レスポンシブ対応用のcss -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
+
+    <title>KURI Cafe</title>
+</head>
+
+<body>
+    <header class="header">        
+        <div class="header-bar">
+            
+            <h1><img src="image/logo.png" alt="KURIcafe"></h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="#example1" class="nav-a">見出し1</a></li>
+                    <li><a href="#example2" class="nav-a">見出し2</a></li>
+                    <li><a href="#example3" class="nav-a">見出し3</a></li>
+                </ul>
+            </nav>
+        
+            <!-- ハンバーガーメニュー -->
+            <div class="sp-menu">
+                <input type="checkbox" id="nav-input" class="nav-invisible">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <div id="nav-contents">
+                    <nav>
+                        <ul>
+                            <li class="sp-menu-list">
+                                <a href="#example1">
+                                    <div class="sp-menu-top">見出し1</div>
+                                </a>
+                            </li>
+                            <li class="sp-menu-list">
+                                <a href="#example2">
+                                    <div class="sp-menu-top">見出し2</div>
+                                </a>    
+                            </li>                          
+                            <li class="sp-menu-list">
+                                <a href="#example3">
+                                    <div class="sp-menu-top">見出し3</div>
+                                </a>    
+                            </li>                       
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+        <div class="m-top">
+            <img src="image/mv.png" alt="モンブランの画像">
+            <p>キャッチコピーが入ります</p>            
+        </div>
+
+        <section class="m-concept">
+            
+            <div class="row">
+            <!-- ブロック中央寄せ -->
+            <div class="mx-auto col-xs-12 col-lg-9">
+                <h2 class="m-h2">タイトルが入ります</h2>
+                <p class="m-concept-p">
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。テキストが入ります。<br>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    テキストが入ります。テキストが入ります。<br>
+                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                </p>
+            </div>
+        </section> 
+        <section class="m-recommend">
+            <h2 class="m-h2" id="example1">見出し1</h2> 
+            <div class="row">
+                <div class="col-xs-12 col-lg-4">
+                    <img src="image/01.png" alt="">
+                    <h3 class="m-h3">タイトルが入ります</h3>
+                    <p class="m-p">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <img src="image/02.png" alt="">
+                    <h3 class="m-h3">タイトルが入ります</h3>
+                    <p class="m-p">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                    <img src="image/03.png" alt="">
+                    <h3 class="m-h3">タイトルが入ります</h3>
+                    <p class="m-p">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                </div>
+            </div>
+        </section>
+        <section class="m-about">
+            <h2 class="m-h2" id="example2">見出し2</h2>             
+            <div class="row m-about-sub">
+                <div class="col-xs-12 col-lg-6">
+                    <img src="image/04.png" alt="">
+                </div>                
+                <div class="col-xs-12 col-lg-6">
+                    <h3 class="m-h3">タイトルが入ります</h3>
+                    <p class="m-p">                        
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br><br>
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。             
+                    </p>
+                    <button class="btn-more m-about-button">MORE</button>
+                </div> 
+            </div>
+            <div class="row m-about-sub flex-row-reverse">
+                <div class="col-xs-12 col-lg-6">
+                    <img src="image/05.png" alt="">
+                </div>                
+                <div class="col-xs-12 col-lg-6">
+                    <h3 class="m-h3">タイトルが入ります</h3>
+                    <p class="m-p">
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br><br>
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。                               
+                    </p>                    
+                    <button class="btn-more m-about-button">MORE</button>
+                </div> 
+            </div>
+        </section>
+        <section class="m-news">
+            <h2 class="m-h2" id="example3">見出し3</h2>
+            <dl class="m-info">
+                <div class="m-info-box">
+                    <dh class="m-info-date">2020.00.00</dh>
+                    <dd class="m-info-content">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</dd>
+                </div>
+                <div class="m-info-box">
+                    <dh class="m-info-date">2020.00.00</dh>
+                    <dd class="m-info-content">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</dd>
+                </div>
+                <div class="m-info-box">
+                    <dh class="m-info-date">2020.00.00</dh>
+                    <dd class="m-info-content">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</dd>
+                </div>
+                <div class="m-info-box">
+                    <dh class="m-info-date">2020.00.00</dh>
+                    <dd class="m-info-content">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</dd>
+                </div>
+                <div class="m-info-box">
+                    <dh class="m-info-date">2020.00.00</dh>
+                    <dd class="m-info-content">タイトルが入ります。タイトルが入ります。タイトルが入ります。</dd>
+                </div>
+                <div class="m-info-box">
+                    <dh class="m-info-date">2020.00.00</dh>
+                    <dd class="m-info-content">タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</dd>
+                </div>
+            </dl>
+            
+            <button class="btn-more m-news-button">MORE</button>
+        </section>
+        
+        <section class="m-access">
+            <div class="row flex-row-reverse">
+                <div class="col-xs-12 col-lg-6">
+                    <img src="image/map.png" alt="">
+                </div>                
+                <div class="col-xs-12 col-lg-6 m-access-info">
+                    <div class="m-access-logolabel">
+                        <img class="m-access-logo" src="image/logo.png" alt="KURIcafe">
+                    </div>
+                    <p class="m-p m-p-access">
+                        〒000-0000<br>
+                        東京都××区××●丁目●番●号<br>
+                        TEL : 03-0000-0000 (代表)<br>
+                        FAX : 00-0000-0000<br>
+                    </p>
+                    <ul>
+                        <li><img src="image/facebook.png" alt="facebook" class="snsicon"></li>
+                        <li><img src="image/twitter.png" alt="twitter" class="snsicon"></li>
+                        <li><img src="image/instagram.png" alt="instagram" class="snsicon"></li>
+                        <li><img src="image/line.png" alt="line" class="snsicon"></li>
+                    </ul>                 
+                </div> 
+            </div>
+        </section>
+
+        <!-- jQuery、Popper.js、Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </div>
+
+    <footer>
+        <p class="footer-logo">&copy 2020 KURIcafe Co., Ltd.</p>
+
+
+    </footer>
+
+</body>
+
+</html>
